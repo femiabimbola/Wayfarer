@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 
 const port = 2000;
 app.listen(port, () => {
-    console.log(`Yaaay server is listening on ${port}`);
+    console.log(`Yay server is listening on ${port}`);
 });
 
 export default app;
