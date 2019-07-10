@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon ./API/app.js --exec babel-node",
     "test": "nyc mocha --require @babel/register API/test/user.test.js --timeout 5000ms --exit",
-    "build": "babel server --out-dir dist",
+    "build": "babel API --out-dir dist",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "coveralls": "nyc --reporter=lcov --reporter=text-lcov npm test"
   },
